@@ -18,6 +18,16 @@ android {
         }
     }
 
+    flavorDimensions 'brand'
+
+    productFlavors {
+
+        whitelabel {
+            dimension 'brand'
+            matchingFallbacks = ['whitelabel']
+        }
+    }
+
 }
 
 dependencies {

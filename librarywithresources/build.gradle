@@ -9,6 +9,24 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    flavorDimensions 'brand'
+
+    productFlavors {
+
+        whitelabel {
+            dimension 'brand'
+        }
+
+        brandX {
+            dimension 'brand'
+        }
+
+        brandY {
+            dimension 'brand'
+        }
+    }
+
 }
 
 dependencies {

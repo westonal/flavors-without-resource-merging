@@ -19,6 +19,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions 'brand'
+
+    productFlavors {
+
+        whitelabel {
+            dimension 'brand'
+        }
+
+        brandX {
+            dimension 'brand'
+        }
+
+        brandY {
+            dimension 'brand'
+        }
+    }
 }
 
 dependencies {
