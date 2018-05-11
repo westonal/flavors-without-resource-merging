@@ -8,7 +8,7 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-
+        missingDimensionStrategy 'brand', 'whitelabel'
     }
 
     buildTypes {
@@ -17,22 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    flavorDimensions 'brand'
-
-    productFlavors {
-
-        whitelabel {
-            dimension 'brand'
-            matchingFallbacks = ['whitelabel']
-        }
-    }
-
 }
 
 dependencies {
     implementation project(':librarywithresources')
 
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
 }
